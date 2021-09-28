@@ -1,4 +1,5 @@
 const canvas = document.getElementById("canvas")
+<<<<<<< HEAD
 canvas.width = 500
 canvas.height = 300
 const context = canvas.getContext('2d')
@@ -45,3 +46,8 @@ for(i = 0; i <= 10; i++){
     
 }
 
+=======
+canvas.width = 600
+canvas.height =300
+const context = canvas.getContext('2d')
+>>>>>>> a8b720a58af64422fb96ecf7ee67068246dd9f4e
