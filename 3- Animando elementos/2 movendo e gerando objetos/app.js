@@ -1,25 +1,24 @@
-const canvas = document.getElementById("canvas")
-<<<<<<< HEAD
+ canvas = document.getElementById("canvas")
 canvas.width = 500
 canvas.height = 300
 const context = canvas.getContext('2d')
 
-const circle = (x, y, r = 20, c = "blue", sX = 5, sY = 5) => {
+function circle(x, y, r = 20, c = "blue", sX = 5, sY = 5){
 
-    let circleX = x
-    let circleY = y
-    let radius = r
-    let color = c
-    let speedX = sX
-    let speedY = sY
+    this.circleX = x
+    this.circleY = y
+    this.radius = r
+    this.color = c
+    this.speedX = sX
+speedY = sY
 
-    const draw = () =>{
+     draw = () =>{
         context.beginPath()
         context.arc(circleX,circleY, radius, 0,  Math.PI * 2, false)
         context.strokeStyle = color
         context.stroke()
     }
-    const update= () =>{
+     update= () =>{
         
         requestAnimationFrame(update)
         context.clearRect(0, 0, canvas.width, canvas.height)
@@ -46,8 +45,3 @@ for(i = 0; i <= 10; i++){
     
 }
 
-=======
-canvas.width = 600
-canvas.height =300
-const context = canvas.getContext('2d')
->>>>>>> a8b720a58af64422fb96ecf7ee67068246dd9f4e

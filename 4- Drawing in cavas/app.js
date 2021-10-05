@@ -39,3 +39,4 @@ window.addEventListener('load', () => {
     canvas.addEventListener('mousemove', draw)
 
 })
+
